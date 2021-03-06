@@ -8,15 +8,20 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poiret+One&display=swap" rel="stylesheet">
-  <title>KlikAja.id</title>
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <title>Klikaja.id</title>
+  <link rel="icons" href="assets/icons/Logo klikaja-01.png">
 </head>
-<div class="progress">
+<body id="home">
+<div class="progresss">
   <div class="progress-bar"></div>
 </div>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">KlikAja.id</a>
+      <a class="navbar-brand" href="#">
+        <img src="assets/icons/logo-fix.png" alt="klik-aja">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <!-- <span class="navbar-toggler-icon" style="width: 20px;"></span> -->
         <div class="menu-toggle">
@@ -27,11 +32,14 @@
         </div>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto ">
-          <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">About</a>
-          <a class="nav-item nav-link" href="#">Members</a>
-          <a class="nav-item nav-link" href="#">Contact</a>
+        <div class="navbar-nav ms-auto">
+          <a class="nav-item nav-link" href="#home">Home</a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#members">Members</a>
+          <a class="nav-item nav-link" href="#mitra">Mitra</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+          <a href="login.html" class="btn btn-primary btn-sm me-1 my-1">Login</a>
+          <a href="register.html" class="btn btn-secondary btn-sm my-1">Daftar</a>
         </div>
       </div>
     </div>
@@ -43,11 +51,11 @@
     <div class="container text-center d-flex flex-column justify-content-center align-items-center text-light">
       <div class="row justify-content-center">
         <div class="col-md-8 col-12">
-          <h1 class="display-4">Lets <span>Build</span> Your Simple <span>Payment</span></h1>
-          <span class="fw-light caps">Wujudkan sistem pembayaran yang mudah dan aman untuk client anda, cukup dengan <b>SEKALI</b> klik client anda sudah bisa melakukan pembayaran melalui mitra kami</span>
+          <h1 class="display-4" data-aos="fade-up" data-aos-duration="400" data-aos-offset="200" data-aos-easing="ease-in-quad">Lets <span>Build</span> Your Simple <span>Payment</span></h1>
+          <p class="fw-light caps" data-aos="fade-up" data-aos-duration="500" data-aos-offset="200" data-aos-easing="ease-in-quad">Wujudkan sistem pembayaran yang mudah dan aman untuk client anda, cukup dengan <b>SEKALI</b> klik client anda sudah bisa melakukan pembayaran melalui mitra kami</p>
         </div>
       </div>
-      <a class="btn btn-primary btn-md mt-4" href="#" role="button">Gabung Sekarang</a>
+      <a class="btn btn-primary btn-md mt-4 text-light" href="register.html" role="button" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-easing="ease-in-quad">Gabung Sekarang</a>
     </div>
     <!-- <img src="assets/img/wave.svg" alt=""> -->
   </section>
@@ -60,19 +68,37 @@
         <div class="info">
           <div class="row">
             <div class="col-lg">
-              <img src="assets/icons/time.svg" alt="time" class="float-start w-25">
-              <h4>Hemat Waktu</h4>
-              <p class="text-secondary">Hanya dengan sekali klik masalah pembayaran anda terselesaikan</p>
+              <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                  <img src="assets/icons/time.svg" alt="time" class="w-100">
+                </div>
+                <div class="col-md-8 col-12 text-sm-start text-center">
+                  <h4>Hemat Waktu</h4>
+                  <p class="text-secondary">Hanya dengan sekali klik masalah pembayaran anda terselesaikan</p>
+                </div>
+              </div>
             </div>
             <div class="col-lg">
-              <img src="assets/icons/multitasking.svg" alt="time" class="float-start w-25">
-              <h4>Hubungkan Client</h4>
-              <p class="text-secondary">Permudah client anda dalam melakukan transaksi pembayaran ke banyak cara</p>
+              <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                  <img src="assets/icons/multitasking.svg" alt="time" class="w-100">
+                </div>
+                <div class="col-md-8 col-12 text-sm-start text-center">
+                  <h4>Hubungkan Client</h4>
+                  <p class="text-secondary">Permudah client anda dalam melakukan transaksi pembayaran ke banyak cara</p>
+                </div>
+              </div>
             </div>
             <div class="col-lg">
-              <img src="assets/icons/security-system.svg" alt="time" class="float-start w-25">
-              <h4>Keamanan</h4>
-              <p class="text-secondary">Seluruh transaksi yang dilakukan dijamin keamanannya</p>
+              <div class="row">
+                <div class="col-md-4 col-12 text-center">
+                  <img src="assets/icons/security-system.svg" alt="time" class="w-100">
+                </div>
+                <div class="col-md-8 col-12 text-sm-start text-center">
+                  <h4>Keamanan</h4>
+                  <p class="text-secondary">Seluruh transaksi yang dilakukan dijamin keamanannya</p>
+                </div>
+              </div>
             </div>
           </div><!--./row-->
         </div><!--./card-->
@@ -85,68 +111,68 @@
   <section id="about">
     <div class="container">
       <div class="row text-center mb-5">
-        <div class="col">
-          <h1>Welcome to KlikAja.id</h1>
+        <div class="col" >
+          <h1 data-aos="fade-up" data-aos-duration="400" data-aos-offset="200" data-aos-easing="ease-in-quad">Welcome to KlikAja.id</h1>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-md-4 col-10 mb-5">
+        <div class="col-md-4 col-10 mb-5" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-easing="ease-in-quad">
           <img src="assets/img/mobile-pay.svg" class="img-fluid" alt="mobile-pay">
         </div>
-        <div class="col-md-4 col-10 sm:text-justify">
-          <p class="lead"><span>KlikAja.id </span>merupakan sebuah start up yang menyediakan jasa menghubungkan para biller(lembaga pendidkan,koperasi simpan pinjam) dengan para client sehingga transaksi pembayaran dari Nasabah/Anggota/Siswa/Mahasiswa bisa dilakukan dengan mudah melalui mitra kami yaitu <span>Indomart </span>dan <span>ATM Bersama</span></p>
+        <div class="col-md-4 col-10 sm:text-justify" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-easing="ease-in-quad">
+          <p class="lead"><span>KlikAja.id </span>merupakan sebuah start up yang menyediakan jasa menghubungkan para biller(lembaga pendidkan,koperasi simpan pinjam) dengan para client sehingga transaksi pembayaran dari Nasabah/Anggota/Siswa/Mahasiswa bisa dilakukan dengan mudah melalui mitra kami.
         </div>
       </div>
     </div>
-    <!-- <img src="assets/img/wave2.svg"  alt=""> -->
     <img src="assets/img/wave2.svg" class="waves" alt="waves">
   </section>
   <!-- Akhir about us -->
 
   <!-- Members -->
   <section id="members">
-    <div class="container mb-5">
-      <div class="row text-center mb-5">
-        <div class="col">
-          <h1>Siapa saja yang dapat bergabung?</h1>
+    <div class="container mb-5" >
+      <div class="row text-center justify-content-center mb-5">
+        <div class="col-md-6 col-10" data-aos="fade-up" data-aos-duration="400" data-aos-offset="200" data-aos-easing="ease-in-quad">
+          <h1 class="text-light mb-4">Siapa saja yang dapat bergabung?</h1>
+          <hr class="bg-light text-center" style="height: 3px;">
         </div>
       </div>      
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
-            <div class="card h-100 shadow-sm">
+            <div class="card h-100" data-aos="fade-up" data-aos-duration="550" data-aos-offset="200" data-aos-easing="ease-in-quad">
               <div class="row justify-content-center pt-2">
                 <img src="assets/icons/lembaga-pendidikan.svg" alt="...">
               </div>
               <div class="card-body text-center">
                 <h5 class="card-title mb-3">Lembaga Pendidian</h5>
                 <p class="card-text">
-                  Keuntungan bergabung dengan kami adalah para Siswa/Mahasiswa bisa lebih mudah dalam melakukan pembayaran SPP atau keperluan pendidikan lainnya melalui mitra kami Indomartdan ATM Bersama 
+                  Keuntungan bergabung dengan kami adalah para Siswa/Mahasiswa bisa lebih mudah dalam melakukan pembayaran SPP atau keperluan pendidikan lainnya melalui mitra kami. 
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-duration="650" data-aos-offset="200" data-aos-easing="ease-in-quad">
               <div class="row justify-content-center pt-2">
                 <img src="assets/icons/bank.svg" alt="...">
               </div>
               <div class="card-body text-center">
                 <h5 class="card-title mb-3">Koperasi/BPR</h5>
                 <p class="card-text">
-                  Dengan bergabung dengan KlikAja.id para nasabah bisa melakukan transaksi pembayaran (menabung,meminjam uang) melalui mitra kami Indomart dan ATM Bersama. Nasabah juga bisa melakukan penarikan tunai.
+                  Dengan bergabung dengan KlikAja.id para nasabah bisa melakukan transaksi pembayaran (menabung,meminjam uang) melalui mitra kami. Nasabah juga bisa melakukan penarikan tunai.
                 </p>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card h-100">
+            <div class="card h-100" data-aos="fade-up" data-aos-duration="750" data-aos-offset="200" data-aos-easing="ease-in-quad">
               <div class="row justify-content-center pt-2">
                 <img src="assets/icons/e-commerce.png" alt="...">
               </div>
               <div class="card-body text-center">
                 <h5 class="card-title mb-3">E-Commerce</h5>
                 <p class="card-text">
-                  Dengan bergabung dengan KlikAja.id para pelanggan bisa dengan mudah melakukan transaksi pembayaran di mitra kami yaitu Indomart dan ATM Bersama.
+                  Dengan bergabung dengan KlikAja.id para pelanggan bisa dengan mudah melakukan transaksi pembayaran di mitra kami.
                 </p>
               </div>
             </div>
@@ -157,14 +183,90 @@
   <!-- Akhir members -->
   
   <!-- Why Me -->
-  <img src="assets/img/wave3.svg" alt="">
-  <section id="mitra">
-    <h1 class="text-center">Kenapa Harus Kami?</h1>
+  <img src="assets/img/wave3.svg" alt="wave3" style="margin-top: -20px;">
+  <section id="whyme">
+    <div class="container" >
+      <h1 class="mb-5 ms-5" data-aos="fade-up" data-aos-duration="400" data-aos-offset="200" data-aos-easing="ease-in-quad">Kenapa Harus Kami?</h1>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-5 col-12 order-sm-0 order-1">
+          <img src="assets/img/payment.png" class="w-100 rounded-circle img-payment"  data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-easing="ease-in-quad">
+        </div>
+        <div class="col-md-5 col-11 order-sm-0 order-0" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-easing="ease-in-quad">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Layanan Support 24 Jam
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Kami siap memberikan pelayan terbaik kami selama 24 jam apabila anda atau client anda mengalami masalah pada saat melakukan transaksi pembayaran. Hubungi CS kami di nomor berikut xxxx
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                 Privasi Client 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Sistem kami menjamin kerahasiaan transaksi yang dilakukan oleh setiap client anda, jadi client anda tidak perlu khawatir akan kebocoran data pribadi.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Dashboard Transaksi
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Setiap member <b>Klikaja.id</b> akan mendapatkan dashboard untuk memantau para client dalam melakukan transaksi pembayaran
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--./col 1-->
+      </div><!--./row-->
+    </div>
   </section>
   <!-- Akhir Why -->
   
+
+  <!-- mitra -->
+  <img src="assets/img/wave4.svg" alt="wave4">
+  <section id="mitra">
+    <div class="container-fluid">
+      <h1 class="text-center" data-aos="fade-up" data-aos-duration="400" data-aos-offset="200" data-aos-easing="ease-in-quad">Mitra Kami</h1>
+      <div class="row d-flex justify-content-center">
+        <div class="col-md-5 col-12 text-center">
+          <p class="fw-light text-center" data-aos="fade-up" data-aos-duration="500" data-aos-offset="200" data-aos-easing="ease-in-quad">Kami memiliki mitra yang bisa dijangkau oleh semua client anda dan tersebar diseluruh Indonesia</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row justify-content-md-center align-items-md-start align-items-center mt-3">
+        <img src="assets/icons/indomaret.svg" alt="indomaret" data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" data-aos-easing="ease-in-quad">
+        <img src="assets/icons/atm-bersama.svg" alt="atm-bersama" data-aos="fade-up" data-aos-duration="800" data-aos-offset="200" data-aos-easing="ease-in-quad">
+      </div>
+    </div><!--./container-fluid-->
+  </section>
+  <img src="assets/img/wave-register-2.svg" alt="wave-register-2">
+  <!-- Akhir Mitra -->
+  
+  <!-- Testimoni -->
+  <section id="testimoni">
+
+  </section>
+  <!-- Akhir Terstimoni -->
   <!-- Javascript -->
   <script src="assets/js/popper.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

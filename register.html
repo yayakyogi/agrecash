@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Klikaja.id</title>
+</head>
+<body class="body-register">
+  <!-- Image and text -->
+  <nav class="navbar fixed-top bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/icons/logo-fix.png" alt="klik-aja" class="img-register">
+      </a>
+      <span class="float-end fw-lighter copyright">
+        Copyright &copy; Klikaja.id - 2021 All rights reserved
+      </span>
+    </div>
+  </nav>
+  <div class="container" style="margin-top: 60px;">
+    <div class="row justify-content-center">
+      <div class="col-md-9 col-10 register">
+        <span class="lead fs-1">Register</span>
+          <form action="#" name="register" method="POST">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <!-- Personal Information -->
+                <span class="card-title d-block fs-6 fw-bold my-2">Personal Information</span>
+                <div class="mb-2">
+                  <label for="username" class="form-label text-warning">Username*</label>
+                  <input type="text" name="username" class="form-control" id="username" placeholder="Your Username">
+                </div>
+                <div class="mb-2">
+                  <label for="phone-number" class="form-label text-warning">Phone Number*</label>
+                  <input type="text" name="phone-number" class="form-control" id="phone-number" placeholder="Your Phone Number">
+                </div>
+                <div class="mb-2">
+                  <label for="email" class="form-label text-warning">Email Address*</label>
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Your Email Address">
+                </div>
+                <div class="mb-2">
+                  <label for="password" class="form-label text-warning">Password*</label>
+                  <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="mb-2">
+                  <label for="re-password" class="form-label text-warning">Repeat Password*</label>
+                  <input type="password" name="re-password" class="form-control" id="re-password" placeholder="Repeat Password">
+                </div>
+              </div><!--./col 1-->
+                
+              <div class="col-md-6 col-12">
+                <span class="card-title d-block fs-6 fw-bold my-2">Institution Information</span>
+                <div class="mb-2">
+                  <label for="institution-name" class="form-label text-warning">Institution Name*</label>
+                  <input type="text" name="inst-name" class="form-control" id="institution-name" placeholder="Your Institution Name">
+                </div>
+                <div class="mb-2">
+                  <label for="institution-addres" class="form-label text-warning">Institution Addres*</label>
+                  <input type="text" name="inst-addres" class="form-control" id="institution-addres" placeholder="Your Institution Address">
+                </div>
+                <div class="mb-2">
+                  <label for="instituion-profile" class="form-label text-warning">Institution Profile*</label>
+                  <select name="inst-profile" class="form-select" aria-label="Default select example" onchange="document.register.exprofile.style.display=(this.value==7)?'block':'none';">
+                    <option value="1">Perguruan Tinggi</option>
+                    <option value="2">Sekolah Menengah</option>
+                    <option value="3">Sekolah Dasar</option>
+                    <option value="4">Taman Kanak-Kanak</option>
+                    <option value="5">Koperasi</option>
+                    <option value="6">Bank Perkreditan Rakyat (BPR)</option>
+                    <option value="7">Lainnya</option></select>
+                  <input type="text" class="form-control" name="exprofile" value="" placeholder="Your Institution Profile" style="display: none;">
+                </div>
+                <div class="mb-2">
+                  <label for="institution-code" class="form-label text-warning">Institution Code*</label>
+                  <input type="text" name="inst-code" class="form-control" id="institution-code" placeholder="Your Institution Code">
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-success btn-md mt-2">SAVE</button>
+                </div>
+                <p class="text-center mt-2">Sudah punya akun? <a href="login.html" class="text-decoration-none">Login</a> </p>
+              </div><!--./col 2-->
+            </div><!--./row-->
+          </form>
+        </div>
+      <p class="text-center fw-lighter mt-4 copyright-footer">
+          Copyright &copy; Klikaja.id - 2021 All rights reserved
+      </p>
+    </div>
+  </div>
+</body>
+</html>

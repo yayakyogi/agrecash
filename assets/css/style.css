@@ -1,19 +1,26 @@
+.btn-success{
+  background-color: #28a745;
+}
 body{
   padding-bottom: 500px;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 /* Navbar */
-.progress{
-  height: 5px;
-  animation:animasi-progress 5s infinite ease-in-out;
-}
 .navbar{
   z-index: 5;
-  position: relative;
+  top: 0;
+  /* position: fixed;
+  width: 100%;
+  background-color: white; */
 }
 .navbar-brand{
   font-size: 20px;
-  font-family: 'Fugaz One', cursive;
+  /* font-family: 'Fugaz One', cursive; */
+}
+.navbar-brand img{
+  max-width: 120px;
+  margin-top: -10px;
 }
 
 /* menu toggle */
@@ -66,8 +73,8 @@ body{
   transform: rotate(-45deg) translate(-1px,0);
 }
 .menu-toggle input:checked ~ span:nth-child(3){
+  transform: translateX(-1000%);
   opacity: 0;
-  transform: scale(0);
 }
 
 /* Jumbotron */
@@ -76,7 +83,8 @@ body{
   background-size: cover;
   text-align: center;
   position: relative;
-  height: 580px;
+  height: 530px;
+  margin-top: 55px;
 }
 .jumbotron .container{
   z-index: 2;
@@ -93,14 +101,16 @@ body{
 }
 .jumbotron .display-4{
   color: white;
-  margin-top: 120px;
+  margin-top: 80px;
   font-weight: 200;
   text-shadow:1px 1px 3px rgba(0, 0, 0, 0.7);
   font-size: 40px;
 }
 .jumbotron .display-4 span{
-  font-weight: 500;
-  
+  font-weight: 500; 
+}
+.jumbotron .btn-gabung{
+  background-color: #5000CA;
 }
 .caps{
   font-size: 16px;
@@ -111,13 +121,13 @@ body{
   box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   background-color: white;
-  margin-top: -80px;
+  margin-top: -100px;
   position: relative;
   z-index: 3;
 }
 .info img{
   max-width: 100px;
-  margin-right: 20px;
+  margin-bottom: 10px;
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
 }
 .info h4{
@@ -146,58 +156,122 @@ body{
   font-weight: 500;
 }
 #about img .waves{
-  margin-top: -50px;
-}
+  margin-bottom: -50px;
+} 
 
 /* Members */
 #members{
-  padding: 2rem 0;
-  background-color: #A2D9FF;
+  margin-top: -5px;
+  padding: 4rem 0 2rem;
+  /* background-color: #5000CA; */
+  background-color: #000B76;
 }
 #members .card img{
   max-width: 100px;
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
 }
 
-/* Why */
+.logo{
+  max-width: 180px;
+}
+
+#whyme{
+  background-image: url(../img/bg-team-left.webp),url(../img/bg-team-right.webp);
+  background-size: contain;
+  background-position: left top,right bottom;
+  background-repeat: no-repeat;
+}
+.img-payment{
+  display: none;
+}
+
+/* Halaman register */
+#mitra .container-fluid{
+  background-color: #d4e2fc;
+  padding: 4rem 0 2rem;
+}
+#mitra p{
+  font-size: 18px;
+}
+#mitra img{
+  max-width: 80%;
+  margin: 10px;
+}
+#mitra h1::after{
+  content: "";
+  height: 2px;
+  display: block;
+  margin: 20px auto;
+  width: 20%;
+  background-color: rgb(97, 97, 97);
+}
+
+/* Footer */
+/* .img-footer{
+  margin-top: -150px;
+} */
+
+/* Halaman Register */
+.register{
+  margin-top: 0;
+}
+.img-register{
+  max-width: 100px;
+}
+
+.img-waves-register-1{
+  margin-top: 0;
+}
 
 
+/* Halaman Login */
+.copyright{
+  display: none;
+  font-size: 12px;
+}
+.copyright-footer{
+  display: block;
+  font-size: 12px;
+}
 /* Versi Dektstop */
 @media (min-width:920px){
-  .progress{
-    display: none;
-  }
-  .navbar-brand, .nav-link{
-      color: white !important;
-      text-shadow:1px 1px 3px rgba(0, 0, 0, 0.7);
-  }
   .navbar-brand{
-    font-size: 25px;
+    transition: all 0.2s;
+  }
+  .navbar-brand:hover{
+    transform: scale(1.1);
   }
   .nav-link{
       text-transform: uppercase;
-      margin-right: 30px;
+      margin-right: 20px;
       font-size: 13px;
   }
   .nav-link:hover{
       cursor: pointer;
+      font-weight: 200;
   }
   .nav-link:hover::after{
       content: "";
       display: block;
-      border-bottom: 3px solid #fff;
+      border-bottom: 2px solid #24005a;
       width: 50%;
       margin: auto;
-      padding-bottom: 5px;
-      margin-bottom: -8px;
+      padding-bottom: 3px;
+      margin-bottom: -5px;
+  }
+  /* Info */
+  .info{
+    margin-top: -80px;
+  }
+  .info img{
+    margin-bottom: 0;
   }
   .info .col-lg{
     margin-bottom: 0;
   }
 
   .jumbotron{
-      margin-top: -70px;
-      padding-top: 2rem;
+      padding-top: 1rem;
   }
   .jumbotron .display-4{
       font-size: 60px;
@@ -211,18 +285,30 @@ body{
     font-size: 20px;
     text-align: left;
   }
-
-}
-
-
-/* Animasi */
-@keyframes animasi-progress{
-  from{
-    width: 0%;
-    background-color: #83b3fc;
+  #members{
+    margin-top: -30px;
   }
-  to{
-    width: 100%;
-    background-color: #2d81ff;
+
+  .img-payment{
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5));
+    display: block;
+  }
+  /* MITRA */
+  #mitra p{
+    font-size: 20px;
+  }
+  #mitra img{
+    max-width: 400px;
+  }
+  #mitra h1::after{
+    width: 5%;
+  }
+
+  /* Halaman Login */
+  .copyright{
+    display: block;
+  }
+  .copyright-footer{
+    display: none;
   }
 }
